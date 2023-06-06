@@ -1,0 +1,23 @@
+
+/* chart and inputs */
+
+.btn-primary {
+    background: white;
+    border: none;
+}
+
+.btn-primary:hover {
+    background: white;
+}
+
+.input-group {
+    margin: 10px;
+    width: 20%;
+}
+
+.large-chart {
+    align-items: center;
+}
+
+
+
