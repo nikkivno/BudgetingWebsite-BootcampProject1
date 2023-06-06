@@ -1,0 +1,22 @@
+(( note # colours are place holders ))
+
+:root {
+--primary-color: #000000;
+--secondary-color: #ffffff;
+} 
+
+.spring {
+--primary-color: #00ff00;
+} 
+
+.summer {
+--primary-color: #ff0000;
+} 
+
+.fall {
+--primary-color: #ff9900;
+} 
+
+.winter {
+--primary-color: #0000ff;
+}
