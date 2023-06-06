@@ -43,14 +43,29 @@
 
 
 /* chart and inputs */
+#pieChart {
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+  }
+  
+  circle {
+    opacity: 100;
+  }
+
+  svg {
+    background-color: white;
+    border: white
+  }
+
 .btn-primary {
-    background: white;
+    background: transparent;
     border: none;
 }
 
 .btn-primary:hover {
     background: white;
 }
+
 
 .input-group {
     margin: 10px;
