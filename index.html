@@ -40,6 +40,7 @@
                 Themes
               </a>
               <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Default</a></li>
                 <li><a class="dropdown-item" href="#">Spring</a></li>
                 <li><a class="dropdown-item" href="#">Summer</a></li>
                 <li><a class="dropdown-item" href="#">Fall</a></li>
@@ -50,6 +51,33 @@
         </div>
       </div>
     </nav>
+
+ <!-- Todo List ** keep right side ** -->
+ <div class="container mt-5">
+  <div class="row">
+    <div class="col-md-6 offset-md-6">
+      <h2>Todo List</h2>
+      <div class="input-group mb-3">
+        <input type="text" id="todo-input" class="form-control" placeholder="Add new item">
+        <div class="input-group-append">
+          <button class="btn btn-primary" onclick="addTodo()">Add</button>
+        </div>
+      </div>
+      <ul id="todo-items" class="list-group"></ul>
+    </div>
+  </div>
+</div>
+
+<!-- Notes Section  ** keep right side ** -->
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-6 offset-md-6">
+      <h2>Notes</h2>
+      <textarea id="notes-input" class="form-control mb-3" rows="5" placeholder="Enter your notes"></textarea>
+      <button class="btn btn-primary" onclick="saveNotes()">Save</button>
+    </div>
+  </div>
+</div>
 
     <!-- Button trigger modal -->
     <button

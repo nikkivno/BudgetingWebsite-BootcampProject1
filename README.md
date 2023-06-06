@@ -72,7 +72,7 @@ The following is what we all contributed to the project.
 ### Coral -  xNoirNightx
 - README
 - Colour Theme
-- 
+- Todo / Notes
 - 
 
 ### Riley - Riley19James

@@ -4,9 +4,9 @@
 :root {
 --primary-color: #000000;
 --secondary-color: #ffffff;
---accent-color: ;
---content-bg-color: ;
---content-secondary-color: ;
+--accent-color: #000000;
+--content-bg-color: #000000;
+--content-secondary-color: #000000;
 }
 
 .spring {
@@ -78,3 +78,51 @@
 
 
 
+/* TODO LIST and NOTES *** keep on right side *** */
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .input-group {
+    margin-bottom: 10px;
+  }
+  .form-control {
+    border-radius: 0;
+  }
+  .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  .btn-primary:hover {
+    background-color: h2 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      .input-group {
+        margin-bottom: 10px;
+      }
+      .form-control {
+        border-radius: 0;
+      }
+      .btn-primary {
+        background-color: #000000;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+      .btn-primary:hover {
+        background-color: #000000;
+      }
+      #notes-input {
+        resize: none;
+      }
+  }
+  #notes-input {
+    resize: none;
+  }
