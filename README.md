@@ -64,19 +64,19 @@ The following image shows the web application.
 The following is what we all contributed to the project.
 
 ### Nikki - nikkivno
-- 
-- 
+- README
+- Bootstrap
 - 
 - 
 
 ### Coral -  xNoirNightx
-- 
-- 
+- README
+- Colour Theme
 - 
 - 
 
 ### Riley - Riley19James
-- 
+- README
 - 
 - 
 - 

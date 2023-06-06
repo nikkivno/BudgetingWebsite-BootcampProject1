@@ -1,6 +1,48 @@
 
-/* chart and inputs */
+/*note # colours are place holders */
 
+:root {
+--primary-color: #000000;
+--secondary-color: #ffffff;
+--accent-color: ;
+--content-bg-color: ;
+--content-secondary-color: ;
+}
+
+.spring {
+--primary-color: #00ff00;
+--secondary-color: #ffffff;
+--accent-color: ;
+--content-bg-color: ;
+--content-secondary-color: ;
+}
+
+.summer {
+--primary-color: #ff0000;
+--secondary-color: #ffffff;
+--accent-color: ;
+--content-bg-color: ;
+--content-secondary-color: ;
+}
+
+.fall {
+--primary-color: #ff9900;
+--secondary-color: #ffffff;
+--accent-color: ;
+--content-bg-color: ;
+--content-secondary-color: ;
+}
+
+.winter {
+--primary-color: #0000ff;
+--secondary-color: #ffffff;
+--accent-color: ;
+--content-bg-color: ;
+--content-secondary-color: ;
+}
+
+
+/* chart and inputs */
 .btn-primary {
     background: white;
     border: none;
