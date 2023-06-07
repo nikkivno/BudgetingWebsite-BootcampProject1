@@ -55,4 +55,13 @@ function saveNotes() {
     localStorage.setItem('notes', notes);
 }
 
+function clearInput() {
+    let todoItems = document.getElementById('todo-items');
+    let todoInput = document.getElementById('todo-input');
+    todoItems.innerHTML = ''; // Clear the list items
+    todoInput.value = ''; // Clear the input field
+    localStorage.removeItem('todoItems'); 
+
+    clearButton.addEventListener('click', clearInput);
+    }
 //   -----------------------------git push 

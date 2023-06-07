@@ -64,6 +64,7 @@
         </div>
       </div>
       <ul id="todo-items" class="list-group"></ul>
+      <input type="button" value="Clear" id="clear-button"  class="btn-primary" onclick="clearInput()">
     </div>
   </div>
 </div>
@@ -144,75 +145,32 @@
     </div>
 
     <!-- Input form for budget Numbers -->
-    <div class="input-group">
-      <input
-        type="text"
-        class="form-control"
-        aria-label="Dollar amount (with dot and two decimal places)"
-      />
-      <span class="input-group-text">$</span>
-      <span class="input-group-text">0.00</span>
-    </div>
+    <form class="inputForm">
+      <div class="form-group answer">
+        <label for="formGroupExampleInput">Mortgage/Rent</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="monthly mortgage payment">
+      </div>
+      <div class="form-group answer">
+        <label for="formGroupExampleInput2">Insurance</label>
+        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="car/home insurance">
+      </div>
+      <div class="form-group answer">
+        <label for="formGroupExampleInput2">Loan Payments</label>
+        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="loan payments">
+      </div>
+      <div class="form-group answer">
+        <label for="formGroupExampleInput2">Groceries</label>
+        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="estimated grocery budget">
+      </div>
+      <div class="form-group answer">
+        <label for="formGroupExampleInput2">Miscellanious</label>
+        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="other expenses">
+      </div>
+      <button class="subBtn" type="submit">
+       Submit
+      </button>
+    </form>
 
-    <div class="input-group">
-      <input
-        type="text"
-        class="form-control"
-        aria-label="Dollar amount (with dot and two decimal places)"
-      />
-      <span class="input-group-text">$</span>
-      <span class="input-group-text">0.00</span>
-    </div>
-
-    <div class="input-group">
-      <input
-        type="text"
-        class="form-control"
-        aria-label="Dollar amount (with dot and two decimal places)"
-      />
-      <span class="input-group-text">$</span>
-      <span class="input-group-text">0.00</span>
-    </div>
-
-    <div class="input-group">
-      <input
-        type="text"
-        class="form-control"
-        aria-label="Dollar amount (with dot and two decimal places)"
-      />
-      <span class="input-group-text">$</span>
-      <span class="input-group-text">0.00</span>
-    </div>
-
-    <div class="input-group">
-      <input
-        type="text"
-        class="form-control"
-        aria-label="Dollar amount (with dot and two decimal places)"
-      />
-      <span class="input-group-text">$</span>
-      <span class="input-group-text">0.00</span>
-    </div>
-
-    <div class="input-group">
-      <input
-        type="text"
-        class="form-control"
-        aria-label="Dollar amount (with dot and two decimal places)"
-      />
-      <span class="input-group-text">$</span>
-      <span class="input-group-text">0.00</span>
-    </div>
-
-    <div class="input-group">
-      <input
-        type="text"
-        class="form-control"
-        aria-label="Dollar amount (with dot and two decimal places)"
-      />
-      <span class="input-group-text">$</span>
-      <span class="input-group-text">0.00</span>
-    </div>
 
 
     <!-- Bootstrap Link for JS -->
