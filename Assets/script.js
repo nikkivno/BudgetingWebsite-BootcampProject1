@@ -55,8 +55,13 @@ function saveNotes() {
     localStorage.setItem('notes', notes);
 }
 
-//  API KEY
-var APIkey="AIzaSyCSN21yV4W0obignfo7UKXQ8OcIIxGQ9Tc"
+function clearInput() {
+    let todoItems = document.getElementById('todo-items');
+    let todoInput = document.getElementById('todo-input');
+    todoItems.innerHTML = ''; // Clear the list items
+    todoInput.value = ''; // Clear the input field
+    localStorage.removeItem('todoItems'); 
 
-function
+    clearButton.addEventListener('click', clearInput);
+    }
 //   -----------------------------git push 
