@@ -148,31 +148,22 @@
     </div>
 
     <!-- Input form for budget Numbers -->
-    <form class="inputForm">
-      <div class="form-group answer">
-        <label for="formGroupExampleInput">Mortgage/Rent</label>
-        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="monthly mortgage payment">
-      </div>
-      <div class="form-group answer">
-        <label for="formGroupExampleInput2">Insurance</label>
-        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="car/home insurance">
-      </div>
-      <div class="form-group answer">
-        <label for="formGroupExampleInput2">Loan Payments</label>
-        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="loan payments">
-      </div>
-      <div class="form-group answer">
-        <label for="formGroupExampleInput2">Groceries</label>
-        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="estimated grocery budget">
-      </div>
-      <div class="form-group answer">
-        <label for="formGroupExampleInput2">Miscellanious</label>
-        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="other expenses">
-      </div>
-      <button class="subBtn" type="submit">
-       Submit
-      </button>
-    </form>
+    <form id="budgetForm">
+      <table>
+          <tr>
+              <th>Expense</th>
+              <th>Amount</th>
+          </tr>
+          <tr>
+              <td><input type="text" name="label[]" placeholder="Expense label"></td>
+              <td><input type="number" name="amount[]" placeholder="Expense Amount"></td>
+          </tr>
+      </table>
+      <button type="button" id="newExpense">Add Expense</button>
+      <button type="button" id="culminate">See Total</button>
+      <p id="total"></p>
+  </form>
+
 
 
 
