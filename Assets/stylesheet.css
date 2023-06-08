@@ -56,22 +56,17 @@
     background-color: white;
     border: white
   }
-
 .btn-primary {
     background: transparent;
     border: none;
 }
-
 .btn-primary:hover {
     background: white;
 }
-
-
 .input-group {
     margin: 10px;
     width: 20%;
 }
-
 .large-chart {
     align-items: center;
 }

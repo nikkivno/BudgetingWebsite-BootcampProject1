@@ -2,12 +2,8 @@
 function changeTheme(theme) {
     document.documentElement.className = theme; }
 
-
 // Pie Chart Stuff 
-
 const container = d3.select("#pieChart");
-
-
 const svg = container.append("svg")
   .attr("width", 300)
   .attr("height", 300);
@@ -22,21 +18,31 @@ svg.append("circle")
 
 
 
-
-//   Todo list and notes **right side**
+// Todo list and notes **right side**
 window.addEventListener('DOMContentLoaded', function() {
     loadTodoItems();
+    loadNotes();
 });
 function addTodo() {
     let todoInput = document.getElementById('todo-input');
     let todoItems = document.getElementById('todo-items');
-
     let newTodo = document.createElement('li');
     newTodo.className = 'list-group-item';
     newTodo.textContent = todoInput.value;
+    let removeButton = document.createElement('button');
+    removeButton.className = 'btn btn-danger btn-sm float-end';
+    removeButton.textContent = 'Remove';
+    removeButton.addEventListener('click', function() {
+        removeTodoItem(newTodo);
+    });
+    newTodo.appendChild(removeButton);
     todoItems.appendChild(newTodo);
-
     todoInput.value = '';
+    saveTodoItems();
+}
+function removeTodoItem(item) {
+    let todoItems = document.getElementById('todo-items');
+    todoItems.removeChild(item);
     saveTodoItems();
 }
 function saveTodoItems() {
@@ -54,14 +60,21 @@ function saveNotes() {
     let notes = notesInput.value;
     localStorage.setItem('notes', notes);
 }
-
+function loadNotes() {
+    let savedNotes = localStorage.getItem('notes');
+    if (savedNotes) {
+        document.getElementById('notes-input').value = savedNotes;
+    }
+}
+// clears each item added seperatly now *****
 function clearInput() {
     let todoItems = document.getElementById('todo-items');
     let todoInput = document.getElementById('todo-input');
-    todoItems.innerHTML = ''; // Clear the list items
-    todoInput.value = ''; // Clear the input field
-    localStorage.removeItem('todoItems'); 
-
+    todoItems.innerHTML = ''; 
+    todoInput.value = ''; 
+    localStorage.removeItem('todoItems');
     clearButton.addEventListener('click', clearInput);
-    }
-//   -----------------------------git push 
+}
+// Clear button
+let clearButton = document.getElementById('clear-button');
+clearButton.addEventListener('click', clearInput);
