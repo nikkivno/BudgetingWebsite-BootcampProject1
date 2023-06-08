@@ -55,4 +55,8 @@ function saveNotes() {
     localStorage.setItem('notes', notes);
 }
 
+//  API KEY
+var APIkey="AIzaSyCSN21yV4W0obignfo7UKXQ8OcIIxGQ9Tc"
+
+function
 //   -----------------------------git push 
