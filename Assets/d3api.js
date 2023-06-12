@@ -42,34 +42,36 @@ const svg = container.append("svg")
 
 function createPieChart(data) {
 
-  var width = 300;
-  var height = 300;
-  var radius = Math.min(width, height) / 2;
+  const width = 300;
+  const height = 300;
+  const radius = Math.min(width, height) / 2;
 
 
-  var color = d3.scaleOrdinal(d3.schemeCategory10);
+  let color = d3.scaleOrdinal(d3.schemeCategory10);
 
  
-  var chart = svg.append("g")
+  const chart = svg.append("g")
     .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
   
-  var pie = d3.pie()
+  let pie = d3.pie()
     .value(function(d) { return d; });
 
   
-  var arc = d3.arc()
+  let arc = d3.arc()
     .innerRadius(0)
     .outerRadius(radius);
 
+  chart.selectAll("*").remove();
 
-  var slices = chart.selectAll("path")
+  let slices = chart.selectAll("path")
     .data(pie(data))
     .enter()
     .append("path")
     .attr("d", arc)
     .attr("fill", function(d, i) { return color(i); });
 }
+
 
  document.getElementById('dataForm').addEventListener('submit', function(event) {
   event.preventDefault(); // Prevent form submission
@@ -87,4 +89,5 @@ function createPieChart(data) {
 
   // Call a function to create the pie chart using the data
   createPieChart(data);
+  console.log(createPieChart)
 });

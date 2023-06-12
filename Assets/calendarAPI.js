@@ -17,14 +17,14 @@ document.getElementById('signout_button').style.visibility = 'hidden';
 
 //Callback after api.js is loaded.
 function gapiLoaded() {
-  gapi.load('122574670671-rd21i195k6oj4amdikk62de84pboshbj.apps.googleusercontent.com', initializeGapiClient);
+  gapi.load('client', initializeGapiClient);
 }
 
 //Callback after the API client is loaded. Loads the discovery doc to initialize the API. 
 async function initializeGapiClient() {
   await gapi.client.init({
-    apiKey: AIzaSyCSN21yV4W0obignfo7UKXQ8OcIIxGQ9Tc,
-    discoveryDocs: [www.googleapis.com/auth/calendar.readonly],
+    apiKey: API_KEY,
+    discoveryDocs: [DISCOVERY_DOC],
   });
   gapiInited = true;
   maybeEnableButtons();
@@ -33,9 +33,9 @@ async function initializeGapiClient() {
 //Callback after Google Identity Services are loaded.
 function gisLoaded() {
   tokenClient = google.accounts.oauth2.initTokenClient({
-    client_id: 122574670671-rd21i195k6oj4amdikk62de84pboshbj.apps.googleusercontent.com,
-    scope: www.googleapis.com/auth/calendar.readonly,
-    callback: '', // defined later
+    client_id: CLIENT_ID,
+    scope: SCOPES,
+    callback: '', 
   });
   gisInited = true;
   maybeEnableButtons();

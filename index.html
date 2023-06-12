@@ -56,6 +56,9 @@
 
     <!--Caledner-->
     <p>Calendar</p>
+    <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FToronto&src=a3ZydG5vcGxxQGdtYWlsLmNvbQ&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4tZ2IuY2FuYWRpYW4jaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%2333B679&color=%230B8043" 
+    style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no">
+</iframe>
 
     <!--Add buttons to initiate auth sequence and sign out-->
     <button id="authorize_button" onclick="handleAuthClick()">Authorize</button>
@@ -175,11 +178,11 @@
           </tr>
           <tr>
             <td><input type="text" for="data4" name="Loans" value="Loans:"></td>
-            <td><input type="number" for="data4" name="amount[]" placeholder="Expense Amount"></td>
+            <td><input type="number" id="data4" name="amount[]" placeholder="Expense Amount"></td>
           </tr>
           <tr>
             <td><input type="text" for="data5" name="Loans" value="Groceries:"></td>
-            <td><input type="number" for="data5" name="amount[]" placeholder="Expense Amount"></td>
+            <td><input type="number" id="data5" name="amount[]" placeholder="Expense Amount"></td>
           </tr>
       </table>
       <button type="button" id="newExpense">Add Expense</button>
