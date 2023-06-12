@@ -54,7 +54,96 @@
       </div>
     </nav>
 
-    <!--Caledner-->
+
+<!-- *** Left side *** -->
+    <div class="container">
+      <div class="row">
+        <div class="col">
+           <!-- Button trigger modal -->
+    <button
+    type="button"
+    class="btn btn-primary"
+    data-bs-toggle="modal"
+    data-bs-target="#exampleModal"
+  >
+    <!-- <img class="chart" src="Assets/Images/DataGlossary_Icons_Pie Chart.jpg" /> -->
+   <!-- d3 pie chart -->
+   <div id="pieChart"> 
+   </div>
+  </button>
+
+  <!-- d3 pie chart
+  <div id="pieChart"></div> -->
+
+  <!-- Modal -->
+  <div
+    class="modal fade"
+    id="exampleModal"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">
+            Budget Breakdown
+          </h1>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <img
+            class="large-chart"
+            src="Assets/Images/DataGlossary_Icons_Pie Chart.jpg"
+          />
+          <ol>
+            <li>Example 1</li>
+            <li>Example 2</li>
+            <li>Example 3</li>
+            <li>Example 4</li>
+          </ol>
+        </div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-bs-dismiss="modal"
+          >
+            Close
+          </button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Input form for budget Numbers -->
+  <form id="budgetForm">
+    <table>
+        <tr>
+            <th>Expense</th>
+            <th>Amount</th>
+        </tr>
+        <tr>
+            <td><input type="text" name="label[]" placeholder="Expense label"></td>
+            <td><input type="number" name="amount[]" placeholder="Expense Amount"></td>
+        </tr>
+    </table>
+    <button type="button" id="newExpense">Add Expense</button>
+    <button type="button" id="culminate">See Total</button>
+    <p id="total"></p>
+</form>
+        </div>
+        <div class="col">
+
+
+          <!-- *** CENTER *** -->
+          <!--Caledner-->
     <p>Calendar</p>
     <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FToronto&src=a3ZydG5vcGxxQGdtYWlsLmNvbQ&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4tZ2IuY2FuYWRpYW4jaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%2333B679&color=%230B8043" 
     style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no">
@@ -63,11 +152,13 @@
     <!--Add buttons to initiate auth sequence and sign out-->
     <button id="authorize_button" onclick="handleAuthClick()">Authorize</button>
     <button id="signout_button" onclick="handleSignoutClick()">Sign Out</button>
-
     <pre id="content" style="white-space: pre-wrap;"></pre>
+        </div>
 
 
- <!-- Todo List ** keep right side ** -->
+        <!-- *** Right Side *** -->
+        <div class="col">
+          <!-- Todo List  -->
  <div class="container mt-5">
   <div class="row">
     <div class="col-md-6 offset-md-6">
@@ -83,8 +174,7 @@
     </div>
   </div>
 </div>
-
-<!-- Notes Section  ** keep right side ** -->
+<!-- Notes Section  -->
 <div class="container mt-5">
   <div class="row">
     <div class="col-md-6 offset-md-6">
@@ -94,88 +184,8 @@
     </div>
   </div>
 </div>
-
-    <!-- Button trigger modal -->
-    <button
-      type="button"
-      class="btn btn-primary"
-      data-bs-toggle="modal"
-      data-bs-target="#exampleModal"
-    >
-      <!-- <img class="chart" src="Assets/Images/DataGlossary_Icons_Pie Chart.jpg" /> -->
-     <!-- d3 pie chart -->
-     <div id="pieChart">
-      
-     </div>
-    </button>
-
-    <!-- d3 pie chart
-    <div id="pieChart"></div> -->
-
-    <!-- Modal -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">
-              Budget Breakdown
-            </h1>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <img
-              class="large-chart"
-              src="Assets/Images/DataGlossary_Icons_Pie Chart.jpg"
-            />
-            <ol>
-              <li>Example 1</li>
-              <li>Example 2</li>
-              <li>Example 3</li>
-              <li>Example 4</li>
-            </ol>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Input form for budget Numbers -->
-    <form id="budgetForm">
-      <table>
-          <tr>
-              <th>Expense</th>
-              <th>Amount</th>
-          </tr>
-          <tr>
-              <td><input type="text" name="label[]" placeholder="Expense label"></td>
-              <td><input type="number" name="amount[]" placeholder="Expense Amount"></td>
-          </tr>
-      </table>
-      <button type="button" id="newExpense">Add Expense</button>
-      <button type="button" id="culminate">See Total</button>
-      <p id="total"></p>
-  </form>
-
+        
+<!-- Scripts -->
   <script async defer src="https://apis.google.com/js/api.js" onload="gapiLoaded()"></script>
   <script async defer src="https://accounts.google.com/gsi/client" onload="gisLoaded()"></script>
     <!-- Bootstrap Link for JS -->
