@@ -15,7 +15,7 @@ svg.append("circle")
 
   document.getElementById('newExpense').addEventListener('click', function(){
     let table = document.querySelector('table');
-    let row = table.insertRow(table.rows.length - 1);
+    let row = table.insertRow(table.rows.length);
     let labelCell = row.insertCell(0);
     let amountCell = row.insertCell(1);
     labelCell.innerHTML = '<input type="text" name="label[]" placeholder="Expense label">';
@@ -34,3 +34,5 @@ document.getElementById('culminate').addEventListener('click', function(){
 });
 
 // Form to d3.js chart
+
+ 
