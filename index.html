@@ -159,30 +159,34 @@
     <!-- Input form for budget Numbers -->
     <form id="budgetForm">
       <table>
+        <p id="total"></p>
           <tr>
               <th>Expense</th>
               <th>Amount</th>
           </tr>
           <tr>
-              <td><input type="text" name="Mortgage/Rent" value="Mortgage/Rent:"></td>
-              <td><input type="number" name="amount[]" placeholder="Expense Amount"></td>
+              <td><input type="text" for="data1" name="Mortgage/Rent" value="Mortgage/Rent:"></td>
+              <td><input type="number" id="data1" name="amount[]" placeholder="Expense Amount"></td>
           </tr>
           <tr>
-            <td><input type="text" name="Home Insurance" value="Home Insurance:"></td>
-            <td><input type="number" name="amount[]" placeholder="Expense Amount"></td>
+            <td><input type="text" for="data2" name="Home Insurance" value="Home Insurance:"></td>
+            <td><input type="number" id="data2" name="amount[]" placeholder="Expense Amount"></td>
           </tr>
           <tr>
-            <td><input type="text" name="Car Insurance" value="Car Insurance:"></td>
-            <td><input type="number" name="amount[]" placeholder="Expense Amount"></td>
+            <td><input type="text" for="data3" name="Car Insurance" value="Car Insurance:"></td>
+            <td><input type="number" id="data3" name="amount[]" placeholder="Expense Amount"></td>
           </tr>
           <tr>
-            <td><input type="text" name="Loans" value="Loans:"></td>
-            <td><input type="number" name="amount[]" placeholder="Expense Amount"></td>
+            <td><input type="text" for="data4" name="Loans" value="Loans:"></td>
+            <td><input type="number" for="data4" name="amount[]" placeholder="Expense Amount"></td>
+          </tr>
+          <tr>
+            <td><input type="text" for="data5" name="Loans" value="Groceries:"></td>
+            <td><input type="number" for="data5" name="amount[]" placeholder="Expense Amount"></td>
           </tr>
       </table>
       <button type="button" id="newExpense">Add Expense</button>
       <button type="button" id="culminate">See Total</button>
-      <p id="total"></p>
   </form>
 
   <script async defer src="https://apis.google.com/js/api.js" onload="gapiLoaded()"></script>
