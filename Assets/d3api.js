@@ -41,28 +41,28 @@ const svg = container.append("svg")
   .attr("height", 300);
 
 function createPieChart(data) {
-  // Set up dimensions for the chart
+
   var width = 300;
   var height = 300;
   var radius = Math.min(width, height) / 2;
 
-  // Set up color scale
+
   var color = d3.scaleOrdinal(d3.schemeCategory10);
 
-  // Create SVG element
+ 
   var chart = svg.append("g")
     .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
-  // Generate pie chart layout
+  
   var pie = d3.pie()
     .value(function(d) { return d; });
 
-  // Generate arc paths
+  
   var arc = d3.arc()
     .innerRadius(0)
     .outerRadius(radius);
 
-  // Generate pie slices
+
   var slices = chart.selectAll("path")
     .data(pie(data))
     .enter()

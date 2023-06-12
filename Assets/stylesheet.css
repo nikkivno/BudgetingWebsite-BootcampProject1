@@ -43,26 +43,45 @@
 
 
 /* chart and inputs */
-#pieChart {
-    border: 1px solid #ccc;
-    background-color: #f5f5f5;
+#chart {
+    border: 1px solid #ccc; /* there to make sure I know where the chart is going */
+  }
+
+  #chart path {
+    stroke: white; /* Set the stroke color */
+    stroke-width: 2px; /* Set the stroke width */
   }
   
+  #chart path:nth-child(1) {
+    fill: red; /* Set the fill color for the first data slice */
+  }
+  
+  #chart path:nth-child(2) {
+    fill: blue; /* Set the fill color for the second data slice */
+  }
+
+  #chart path:nth-child(3) {
+    fill: pink; 
+  }
+
+  #chart path:nth-child(4) {
+    fill: grey; 
+  }
+
+  #chart path:nth-child(5) {
+    fill: green; 
+  }
+ 
+
   circle {
     opacity: 100;
   }
 
   svg {
     background-color: white;
-    border: white
+    border: white;
   }
-.btn-primary {
-    background: transparent;
-    border: none;
-}
-.btn-primary:hover {
-    background: white;
-}
+
 .input-group {
     margin: 10px;
     width: 20%;
