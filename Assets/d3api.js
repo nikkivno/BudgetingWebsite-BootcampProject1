@@ -32,3 +32,5 @@ document.getElementById('culminate').addEventListener('click', function(){
     } 
     document.getElementById('total').innerHTML = 'Total Expenses: $' + total.toFixed(2); 
 });
+
+// Form to d3.js chart
