@@ -66,6 +66,7 @@ The following is what we all contributed to the project.
 ### Nikki - nikkivno
 - README
 - Bootstrap
+- Pie chart Expenses
 - 
 - 
 
@@ -73,10 +74,12 @@ The following is what we all contributed to the project.
 - README
 - Colour Theme
 - Todo / Notes
+- Bootstrap
 - 
 
 ### Riley - Riley19James
 - README
+- Calendar
 - 
 - 
 - 
