@@ -54,7 +54,16 @@
       </div>
     </nav>
 
-<div id="calender-container"></div>
+    <!--Caledner-->
+    <p>Calendar</p>
+
+    <!--Add buttons to initiate auth sequence and sign out-->
+    <button id="authorize_button" onclick="handleAuthClick()">Authorize</button>
+    <button id="signout_button" onclick="handleSignoutClick()">Sign Out</button>
+
+    <pre id="content" style="white-space: pre-wrap;"></pre>
+
+
  <!-- Todo List ** keep right side ** -->
  <div class="container mt-5">
   <div class="row">
@@ -164,11 +173,9 @@
       <p id="total"></p>
   </form>
 
-
-
-
+  <script async defer src="https://apis.google.com/js/api.js" onload="gapiLoaded()"></script>
+  <script async defer src="https://accounts.google.com/gsi/client" onload="gisLoaded()"></script>
     <!-- Bootstrap Link for JS -->
-    <script src="https://apis.google.com/js/api.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
