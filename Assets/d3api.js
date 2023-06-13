@@ -1,4 +1,4 @@
-// Pie Chart Stuff 
+//Pie Chart Stuff 
 const container = d3.select("#pieChart");
 const svg = container.append("svg")
   .attr("width", 300)
@@ -31,32 +31,46 @@ document.getElementById('culminate').addEventListener('click', function(){
         }
     } 
     document.getElementById('total').innerHTML = 'Total Expenses: $' + total.toFixed(2); 
+
+    const data = [{
+      name: 'Mortgage/Rent',
+      value: document.getElementById('data1').value 
+    }, {
+    name: 'Home Insurance',
+    value: document.getElementById('data2'). value
+    }, {
+    name: 'Car Insurance',
+    value: document.getElementById('data3').value
+    }, {
+    name: 'Loans',
+    value: document.getElementById('data4').value 
+    }, {
+    name: 'Groceries',
+    value: document.getElementById('data5').value
+    }];
+
+    const color = d3.scaleOrdinal(['red', 'green', 'grey', 'blue', 'pink'])
+
+    const pie = d3.pie().value(d => d.value);
+
+    const radius = Math.min(svg.attr('width'), svg.attr('height'))/2;
+
+    const arc = d3.arc(). outerRadius(radius).innerRadius(0);
+
+    svg.selectAll('.arc').remove();
+
+    const g = svg.append('g').attr('transform', 'translate(150, 150)');
+
+    const pieChart = g
+    .selectAll('.arc')
+    .data(pie(data))
+    .enter()
+    .append('g')
+    .attr('class', 'arc');
+
+    pieChart
+      .append('path')
+      .attr('d', arc)
+      .attr('fill', d => color(d.data.value));
 });
 
-
-const data = [{
-  name: 'Mortgage/Rent',
-  value: document.getElementById('data1').value 
-}, {
-name: 'Home Insurance',
-value: document.getElementById('data2'). value
-}, {
-name: 'Car Insurance',
-value: document.getElementById('data3').value
-}, {
-name: 'Loans',
-value: document.getElementById('data4').value 
-}, {
-name: 'Groceries',
-value: document.getElementById('data5').value
-}]
-
-const color = d3.scaleOrdinal(['red', 'green', 'grey', 'blue', 'pink'])
-
-const pie = d3.pie().value(d => d.value);
-
-d3.arc(). outerRadius(radius).innerRadius(0);
-
-const pieChart = g.selectAll('.arc').data(pie(data)).enter().append('g').attr('class', 'arc');
-
-pieChart.append('path').attr('d', path).attr('fill', d => color(d.data.value));

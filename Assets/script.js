@@ -1,6 +1,24 @@
 // Colour Theme 
 function changeTheme(theme) {
-    document.documentElement.className = theme; }
+    document.documentElement.className = theme;
+}
+
+// Theme dropdown menu
+document.addEventListener('DOMContentLoaded', function() {
+    // theme drop down menu
+    let dropdown = document.querySelector('.dropdown-menu');
+    let dropdownItems = dropdown.querySelectorAll('.dropdown-item');
+
+    // listener for each theme
+    dropdownItems.forEach(function(item) {
+        item.addEventListener('click', function() {
+            let selectedTheme = item.textContent.toLowerCase();
+            
+            // Change theme
+            changeTheme(selectedTheme);
+        });
+    });
+});
 
 // Todo list and notes **right side**
 window.addEventListener('DOMContentLoaded', function() {

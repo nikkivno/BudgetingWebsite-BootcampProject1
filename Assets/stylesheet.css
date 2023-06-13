@@ -1,124 +1,109 @@
-
-/*note # colours are place holders */
+/* Note: Replace the placeholder colors with desired values */
 
 :root {
---primary-color: #000000;
---secondary-color: #ffffff;
---accent-color: #000000;
---content-bg-color: #000000;
---content-secondary-color: #000000;
+  --primary-color: #000000;
+  --secondary-color: #ffffff;
+  --accent-color: #000000;
+  --content-bg-color: #000000;
+  --content-secondary-color: #000000;
 }
 
 .spring {
---primary-color: #00ff00;
---secondary-color: #ffffff;
---accent-color: ;
---content-bg-color: ;
---content-secondary-color: ;
+  --primary-color: #00ff00;
+  --secondary-color: #ffffff;
+  --accent-color: #ffff00;
+  --content-bg-color: #e6f2e6;
+  --content-secondary-color: #99cc99;
 }
 
 .summer {
---primary-color: #ff0000;
---secondary-color: #ffffff;
---accent-color: ;
---content-bg-color: ;
---content-secondary-color: ;
+  --primary-color: #ff0000;
+  --secondary-color: #ffffff;
+  --accent-color: #ffd700;
+  --content-bg-color: #ffcccc;
+  --content-secondary-color: #ffb84d;
 }
 
 .fall {
---primary-color: #ff9900;
---secondary-color: #ffffff;
---accent-color: ;
---content-bg-color: ;
---content-secondary-color: ;
+  --primary-color: #ff9900;
+  --secondary-color: #ffffff;
+  --accent-color: #8b4513;
+  --content-bg-color: #ffdab3;
+  --content-secondary-color: #ffcc66;
 }
 
 .winter {
---primary-color: #0000ff;
---secondary-color: #ffffff;
---accent-color: ;
---content-bg-color: ;
---content-secondary-color: ;
+  --primary-color: #0000ff;
+  --secondary-color: #ffffff;
+  --accent-color: #00bfff;
+  --content-bg-color: #e6f2ff;
+  --content-secondary-color: #99ccff;
 }
 
+/* Gradient Background for Body */
+body {
+  background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+}
 
-/* chart and inputs */
+/* Rest of the CSS code */
 #pieChart {
-    border: 1px solid #ccc;
-    background-color: #f5f5f5;
-  }
-  
-  circle {
-    opacity: 100;
-  }
+  border: 1px solid #ccc;
+  background-color: #f5f5f5;
+}
 
-  svg {
-    background-color: white;
-    border: white
-  }
+circle {
+  opacity: 100;
+}
+
+svg {
+  background-color: white;
+  border: white;
+}
+
 .btn-primary {
-    background: transparent;
-    border: none;
+  background: transparent;
+  border: none;
 }
+
 .btn-primary:hover {
-    background: white;
+  background: white;
 }
+
 .input-group {
-    margin: 10px;
-    width: 20%;
+  margin: 10px;
+  width: 20%;
 }
+
 .large-chart {
-    align-items: center;
+  align-items: center;
 }
 
-
-
-/* TODO LIST and NOTES *** keep on right side *** */
 h2 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  .input-group {
-    margin-bottom: 10px;
-  }
-  .form-control {
-    border-radius: 0;
-  }
-  .btn-primary {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-  }
-  .btn-primary:hover {
-    background-color: h2 ;
-      background-color: h2;
-        font-size: 24px;
-        font-weight: bold;
-        margin-bottom: 10px;
-      }
-      .input-group {
-        margin-bottom: 10px;
-      }
-      .form-control {
-        border-radius: 0;
-      }
-      .btn-primary {
-        background-color: #000000;
-        color: #fff;
-        border: none;
-        padding: 10px 20px;
-        cursor: pointer;
-      }
-      .btn-primary:hover {
-        background-color: #000000;
-      }
-      #notes-input {
-        resize: none;
-      }
-  
-  #notes-input {
-    resize: none;
-  }
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.input-group {
+  margin-bottom: 10px;
+}
+
+.form-control {
+  border-radius: 0;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-color);
+}
+
+#notes-input {
+  resize: none;
+}
