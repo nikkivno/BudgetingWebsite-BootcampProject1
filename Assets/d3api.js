@@ -32,3 +32,25 @@ document.getElementById('culminate').addEventListener('click', function(){
     } 
     document.getElementById('total').innerHTML = 'Total Expenses: $' + total.toFixed(2); 
 });
+
+
+const data = [{
+  name: 'Mortgage/Rent',
+  value: document.getElementById('data1').value 
+}, {
+name: 'Home Insurance',
+value: document.getElementById('data2'). value
+}, {
+name: 'Car Insurance',
+value: document.getElementById('data3').value
+}, {
+name: 'Loans',
+value: document.getElementById('data4').value 
+}, {
+name: 'Groceries',
+value: document.getElementById('data5').value
+}]
+
+const color = d3.scaleOrdinal(['red', 'green', 'grey', 'blue', 'pink'])
+
+const pie = d3.pie().value(d => d.value);
