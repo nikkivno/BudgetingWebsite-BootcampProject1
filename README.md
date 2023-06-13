@@ -8,15 +8,14 @@ We have chosen to code:
 Our project will centre around a budgeting calendar with the user being able to input reoccurring and singular expenses that will display on a monthly calendar spread, accompanied by a pie chart that can open up to a modal display that shows spent income and on what and remaining funds for the month.
 
 Potential APIs to use:
-- 
+- Google Calendar API (https://console.cloud.google.com/apis/library/calendar-json.googleapis.com?authuser=2&project=encoded-source-389221)
 - 
 - 
 - 
 
 
 What We learned during the project.
-
-- 
+- How to Read API documentation.
 - 
 - 
 - 
@@ -80,7 +79,7 @@ The following is what we all contributed to the project.
 ### Riley - Riley19James
 - README
 - Calendar
-- 
+- Google Calender API (events js)
 - 
 - 
 
