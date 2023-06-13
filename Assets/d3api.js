@@ -54,3 +54,9 @@ value: document.getElementById('data5').value
 const color = d3.scaleOrdinal(['red', 'green', 'grey', 'blue', 'pink'])
 
 const pie = d3.pie().value(d => d.value);
+
+d3.arc(). outerRadius(radius).innerRadius(0);
+
+const pieChart = g.selectAll('.arc').data(pie(data)).enter().append('g').attr('class', 'arc');
+
+pieChart.append('path').attr('d', path).attr('fill', d => color(d.data.value));
