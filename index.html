@@ -59,7 +59,7 @@
 <!-- *** Left side *** -->
     <div class="container">
       <div class="row">
-        <div class="col">
+        <div class="col-4">
     <button
     type="button"
     class="btn btn-primary"
@@ -152,11 +152,11 @@
         </div>
         
           <!-- *** CENTER *** -->
-          <div class="col">
+          <div class="col-4">
           <!--Caledner-->
     <p>Calendar</p>
     <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FToronto&src=a3ZydG5vcGxxQGdtYWlsLmNvbQ&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4tZ2IuY2FuYWRpYW4jaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%2333B679&color=%230B8043" 
-    style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no">
+    style="border:solid 1px #777" width="600" height="600" frameborder="0" scrolling="no">
 </iframe>
 
     <!--Add buttons to initiate auth sequence and sign out-->
@@ -167,13 +167,13 @@
 
 
         <!-- *** Right Side *** -->
-        <div class="col">
+        <div class="col-4">
           <!-- Todo List  -->
  <div class="container mt-5">
   <div class="row">
-    <div class="col-md-4 offset-md-4">
+    <div class="col-md-6 offset-md-6">
       <h2>Todo List</h2>
-      <div class="input-group mb-3">
+      <div class="input-group-append">
         <input type="text" id="todo-input" class="form-control" placeholder="Add new item">
         <div class="input-group-append">
           <button class="btn btn-primary" onclick="addTodo()">Add</button>
@@ -187,7 +187,7 @@
 <!-- Notes Section  -->
 <div class="container mt-5">
   <div class="row">
-    <div class="col-md-4 offset-md-4">
+    <div class="col-md-6 offset-md-6">
       <h2>Notes</h2>
       <textarea id="notes-input" class="form-control mb-3" rows="5" placeholder="Enter your notes"></textarea>
       <button class="btn btn-primary" onclick="saveNotes()">Save</button>
