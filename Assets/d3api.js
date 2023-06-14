@@ -37,7 +37,7 @@ document.getElementById('culminate').addEventListener('click', function(){
       value: document.getElementById('data1').value 
     }, {
     name: 'Home Insurance',
-    value: document.getElementById('data2'). value
+    value: document.getElementById('data2').value
     }, {
     name: 'Car Insurance',
     value: document.getElementById('data3').value
