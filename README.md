@@ -80,7 +80,7 @@ The following is what we all contributed to the project.
 - README
 - Calendar
 - Google Calender API (events js)
-- 
+- CSS reset
 - 
 
 > **Note**: Project Requirements was provided to us in class UNB-VIRT-FSF-PT-04-2023-U-LOLC for Project 1.
