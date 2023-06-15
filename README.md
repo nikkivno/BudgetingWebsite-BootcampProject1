@@ -65,8 +65,8 @@ The following is what we all contributed to the project.
 ### Nikki - nikkivno
 - README
 - Bootstrap
-- Pie chart Expenses
-- 
+- Pie chart D3 API
+- Budgeting/Expense Form 
 - 
 
 ### Coral -  xNoirNightx
