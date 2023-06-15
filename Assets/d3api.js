@@ -1,4 +1,5 @@
-//Pie Chart Stuff 
+//Initial Pie Chart Info
+
 const container = d3.select("#pieChart");
 const svg = container.append("svg")
   .attr("width", 300)
@@ -16,15 +17,6 @@ svg.append("circle")
 
 //   Expense Input Form 
 
-  document.getElementById('newExpense').addEventListener('click', function(){
-    let table = document.querySelector('table');
-    let row = table.insertRow(table.rows.length - 1);
-    let labelCell = row.insertCell(0);
-    let amountCell = row.insertCell(1);
-    labelCell.innerHTML = '<input type="text" name="label[]" placeholder="Expense label">';
-    amountCell.innerHTML = '<input type="number" name="amount[]" placeholder="Expense Amount">';
-});
-
 document.getElementById('culminate').addEventListener('click', function(){
     let amounts = document.getElementsByName('amount[]')
     let total = 0;
@@ -40,11 +32,11 @@ document.getElementById('culminate').addEventListener('click', function(){
       value: document.getElementById('data1').value,
       key: 'A'
     }, {
-    name: 'Home Insurance',
+    name: 'Insurance',
     value: document.getElementById('data2').value,
     key: 'B'
     }, {
-    name: 'Car Insurance',
+    name: 'Utilities',
     value: document.getElementById('data3').value,
     key: 'C'
     }, {
@@ -55,9 +47,17 @@ document.getElementById('culminate').addEventListener('click', function(){
     name: 'Groceries',
     value: document.getElementById('data5').value,
     key: 'E'
+    }, {
+      name: 'Transportation',
+      value: document.getElementById('data6').value,
+      key: 'F'
+    }, {
+      name: 'Miscellaneous',
+      value: document.getElementById('data7').value,
+      key: 'G'
     }];
 
-    // const defaultColor = d3.scaleOrdinal(d3.schemeCategory10);
+    // Pie Chart Styling after Data Input
 
     const customColors = d3.scaleOrdinal(['#FFCC0D', '#FF7326', '#FF194D', '#BF2669', '#702A8C', '#023B47', '#295E52', '#F2E085', '#FCAB55', '#EE7F38']);
 
