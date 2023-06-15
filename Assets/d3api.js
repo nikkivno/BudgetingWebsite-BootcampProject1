@@ -8,8 +8,11 @@ const svg = container.append("svg")
 svg.append("circle")
   .attr("cx", 150)
   .attr("cy", 150)
-  .attr("r", 147)
-  .attr("fill", "#F2A7C3");
+  .attr("r", 140)
+  .attr("fill", "#808080")
+  .attr("stroke", "black")
+  .style("stroke-width", "2px")
+  .style('opacity', 50),
 
 //   Expense Input Form 
 
@@ -34,22 +37,29 @@ document.getElementById('culminate').addEventListener('click', function(){
 
     const data = [{
       name: 'Mortgage/Rent',
-      value: document.getElementById('data1').value 
+      value: document.getElementById('data1').value,
+      key: 'A'
     }, {
     name: 'Home Insurance',
-    value: document.getElementById('data2').value
+    value: document.getElementById('data2').value,
+    key: 'B'
     }, {
     name: 'Car Insurance',
-    value: document.getElementById('data3').value
+    value: document.getElementById('data3').value,
+    key: 'C'
     }, {
     name: 'Loans',
-    value: document.getElementById('data4').value 
+    value: document.getElementById('data4').value,
+    key: 'D' 
     }, {
     name: 'Groceries',
-    value: document.getElementById('data5').value
+    value: document.getElementById('data5').value,
+    key: 'E'
     }];
 
-    const color = d3.scaleOrdinal(['red', 'green', 'grey', 'blue', 'pink'])
+    // const defaultColor = d3.scaleOrdinal(d3.schemeCategory10);
+
+    const customColors = d3.scaleOrdinal(['#FFCC0D', '#FF7326', '#FF194D', '#BF2669', '#702A8C', '#023B47', '#295E52', '#F2E085', '#FCAB55', '#EE7F38']);
 
     const pie = d3.pie().value(d => d.value);
 
@@ -71,6 +81,19 @@ document.getElementById('culminate').addEventListener('click', function(){
     pieChart
       .append('path')
       .attr('d', arc)
-      .attr('fill', d => color(d.data.value));
+      .attr('fill', (d, i) => customColors(i))
+      .attr("stroke", "black")
+      .style("stroke-width", "1px")
+      // .style("opacity", 0.7);
+
+    pieChart
+    .selectAll('mySlices')
+    .data(pie(data))
+    .enter()
+    .append('text')
+    .text(function(d){ return d.data.name})
+    .attr("transform", function(d) { return "translate(" + arc.centroid(d) + ")";  })
+    .style("text-anchor", "middle")
+    .style("font-size", 17)
 });
 
