@@ -49,7 +49,11 @@ document.getElementById('culminate').addEventListener('click', function(){
     value: document.getElementById('data5').value
     }];
 
-    const color = d3.scaleOrdinal(['red', 'green', 'grey', 'blue', 'pink'])
+    const defaultColor = d3.scaleOrdinal(d3.schemeCategory10);
+
+   const customColors = d3.scaleOrdinal(['#FFCC0D', '#FF7326', '#FF194D', '#BF2669', '#702A8C', '#023B47', '#295E52', '#F2E085', '#FCAB55', '#EE7F38']);
+
+    const customColor = d3.scaleOrdinal(customColors)
 
     const pie = d3.pie().value(d => d.value);
 
@@ -71,6 +75,6 @@ document.getElementById('culminate').addEventListener('click', function(){
     pieChart
       .append('path')
       .attr('d', arc)
-      .attr('fill', d => color(d.data.value));
+      .attr('fill', (d, i) => color(i));
 });
 
