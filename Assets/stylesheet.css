@@ -9,43 +9,54 @@
 }
 
 .spring {
-  --primary-color: #00ff00;
-  --secondary-color: #ffffff;
-  --accent-color: #ffff00;
-  --content-bg-color: #e6f2e6;
-  --content-secondary-color: #99cc99;
+  --primary-color: #F9CFD7;         
+  --secondary-color: #78C2AD;       
+  --accent-color: #FFD700;          
+  --content-bg-color: #F4F4F4;      
+  --content-secondary-color: #E0E0E0;  
 }
 
 .summer {
-  --primary-color: #ff0000;
-  --secondary-color: #ffffff;
-  --accent-color: #ffd700;
-  --content-bg-color: #ffcccc;
-  --content-secondary-color: #ffb84d;
+  --primary-color: #FFC107;         
+  --secondary-color: #21B6A8;       
+  --accent-color: #FF5252;          
+  --content-bg-color: #FAFAFA;      
+  --content-secondary-color: #CCCCCC;  
 }
-
 .fall {
-  --primary-color: #ff9900;
-  --secondary-color: #ffffff;
-  --accent-color: #8b4513;
-  --content-bg-color: #ffdab3;
-  --content-secondary-color: #ffcc66;
+  --primary-color: #C0392B;         
+  --secondary-color: #F4D03F;       
+  --accent-color: #8B4513;          
+  --content-bg-color: #F8F8F8;      
+  --content-secondary-color: #E0E0E0;  
 }
 
 .winter {
-  --primary-color: #0000ff;
-  --secondary-color: #ffffff;
-  --accent-color: #00bfff;
-  --content-bg-color: #e6f2ff;
-  --content-secondary-color: #99ccff;
+  --primary-color: #004E7C;         
+  --secondary-color: #FFFFFF;       
+  --accent-color: #9C3848;          
+  --content-bg-color: #F5F5F5;     
+  --content-secondary-color: #E0E0E0;  
 }
 
+/*  Body Style */
 /* Gradient Background for Body */
 body {
   background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
 }
 
-/* Rest of the CSS code */
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.btn-primary:hover {
+  background: white;
+}
+
+/*  Left Column Style  */
+
 #pieChart {
   background-color: transparent;
 }
@@ -57,16 +68,6 @@ circle {
 svg {
   background-color: transparent;
 }
-
-.btn-primary {
-  background: transparent;
-  border: none;
-}
-
-.btn-primary:hover {
-  background: white;
-}
-
 .input-group {
   margin: 10px;
   width: 20%;
@@ -91,6 +92,18 @@ h2 {
 }
 
 .btn-primary {
+  background: transparent;
+  border: none;
+}
+
+/*  Ceneter Column Style */
+
+
+
+
+
+/* Right Column Style  */
+.btn-primary {
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -104,3 +117,6 @@ h2 {
 #notes-input {
   resize: none;
 }
+
+
+/*  Footer Style */
