@@ -91,7 +91,7 @@ document.getElementById('culminate').addEventListener('click', function(){
     .data(pie(data))
     .enter()
     .append('text')
-    .text(function(d){ return d.data.name})
+    .text(function(d){ return d.data.key})
     .attr("transform", function(d) { return "translate(" + arc.centroid(d) + ")";  })
     .style("text-anchor", "middle")
     .style("font-size", 17)
