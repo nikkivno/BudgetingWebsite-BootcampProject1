@@ -9,9 +9,10 @@ svg.append("circle")
   .attr("cx", 150)
   .attr("cy", 150)
   .attr("r", 140)
-  .attr("fill", "#F2A7C3")
+  .attr("fill", "#808080")
   .attr("stroke", "black")
   .style("stroke-width", "2px")
+  .style('opacity', 50),
 
 //   Expense Input Form 
 
@@ -91,7 +92,7 @@ document.getElementById('culminate').addEventListener('click', function(){
     .enter()
     .append('text')
     .text(function(d){ return d.data.name})
-    .attr("transform", function(d) { return "translate(" + arcGenerator.centroid(d) + ")";  })
+    .attr("transform", function(d) { return "translate(" + arc.centroid(d) + ")";  })
     .style("text-anchor", "middle")
     .style("font-size", 17)
 });
