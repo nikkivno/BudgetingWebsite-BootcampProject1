@@ -67,8 +67,8 @@
     <table>
       <p id="total"></p>
         <tr>
-            <th><h2>Expense</h2></th>
-            <th><h2>Amount</h2></th>
+            <th><h2 data-text="Expenses">Expenses</h2></th>
+            <th><h2 data-text="Amount">Amount</h2></th>
         </tr>
         <tr>
             <td><label for="data1">A. Mortgage/Rent:</label></td>
@@ -108,7 +108,7 @@
           <div class="col-4 calendar">
           <!--Calendar-->
     <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23aca394&ctz=America%2FToronto&showTz=1&showTitle=1&title=Calendar&showNav=1&showPrint=0&showTabs=1&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4tZ2IuY2FuYWRpYW4jaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%2333B679&color=%23C0CA33"
-     style="border:solid 1px #777" width="630" height="600" frameborder="0" scrolling="no"></iframe>
+     style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 
     <!--Add buttons to initiate auth sequence and sign out-->
     <button class="btn btn-primary authorize" id="authorize_button" onclick="handleAuthClick()">Authorize</button>
@@ -123,7 +123,7 @@
  <div class="container mt-5 todo">
   <div class="row">
     <div class="col-md-6 offset-md-6">
-      <h2>Todo List</h2>
+      <h2 data-text="Todo List">Todo List</h2>
       <div class="input-group-append">
         <input type="text" id="todo-input" class="form-control" placeholder="Add new item">
         <div class="input-group-append">
@@ -139,12 +139,16 @@
 <div class="container mt-5 notes">
   <div class="row">
     <div class="col-md-6 offset-md-6">
-      <h2>Notes</h2>
+      <h2 data-text="Notes">Notes</h2>
       <textarea id="notes-input" class="form-control mb-3" rows="5" placeholder="Enter your notes"></textarea>
       <button class="btn btn-primary" onclick="saveNotes()">Save</button>
     </div>
   </div>
 </div>
+
+<footer>
+  <p> © BudgetSense Made With 💕 Coral Nikki Rylie 💕 For Project 1 </p>
+</footer>
 
 
 <!-- Scripts -->
