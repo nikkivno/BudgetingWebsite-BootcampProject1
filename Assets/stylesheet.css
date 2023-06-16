@@ -136,7 +136,9 @@ form {
 /*  Center Column Style */
 
 
-
+.calendar {
+  z-index: 1;
+}
 
 
 /* Right Column Style  */
