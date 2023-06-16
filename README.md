@@ -67,7 +67,8 @@ The following is what we all contributed to the project.
 - Bootstrap
 - Pie chart Expenses
 - JS
-- 
+- Pie chart D3 API
+- Budgeting/Expense Form 
 
 ### Coral -  xNoirNightx
 - README
