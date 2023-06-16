@@ -65,23 +65,25 @@ The following is what we all contributed to the project.
 ### Nikki - nikkivno
 - README
 - Bootstrap
+- Pie chart Expenses
+- JS
 - Pie chart D3 API
 - Budgeting/Expense Form 
-- 
 
 ### Coral -  xNoirNightx
 - README
 - Colour Theme
 - Todo / Notes
 - Bootstrap
-- 
+- Animation
+- JS
 
 ### Riley - Riley19James
 - README
 - Calendar
 - Google Calender API (events js)
 - CSS reset
-- 
+- Project Slide
 
 > **Note**: Project Requirements was provided to us in class UNB-VIRT-FSF-PT-04-2023-U-LOLC for Project 1.
 

@@ -57,6 +57,9 @@ document.getElementById('culminate').addEventListener('click', function(){
       key: 'G'
     }];
 
+// save the amount data above ( if adding more expense lines add above this line)
+    localStorage.setItem('expenseData', JSON.stringify(data));
+
     // Pie Chart Styling after Data Input
 
     const customColors = d3.scaleOrdinal(['#FFCC0D', '#FF7326', '#FF194D', '#BF2669', '#702A8C', '#023B47', '#295E52', '#F2E085', '#FCAB55', '#EE7F38']);
@@ -97,3 +100,17 @@ document.getElementById('culminate').addEventListener('click', function(){
     .style("font-size", 17)
 });
 
+// saves and pulls the data from the amount section (( added line 62 to save after input ))
+window.addEventListener('load', function() {
+  const savedData = localStorage.getItem('expenseData');
+  if (savedData) {
+    const data = JSON.parse(savedData);
+    // if you add additionall expenses add more lines with the correct # ( ex next is 5)
+    document.getElementById('data1').value = data[0].value;
+    document.getElementById('data2').value = data[1].value;
+    document.getElementById('data3').value = data[2].value;
+    document.getElementById('data4').value = data[3].value;
+    document.getElementById('data5').value = data[4].value;
+    document.getElementById('culminate').click();
+  }
+});
