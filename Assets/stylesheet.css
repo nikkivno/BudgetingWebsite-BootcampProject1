@@ -56,10 +56,6 @@ h2 {
   height: 80px;
 }
 
-.dropdown-menu-end {
-  right: 0 !important;
-  left: auto !important;
-}
 
 h2{
   position: relative;
@@ -98,6 +94,7 @@ h2::before{
 
 #pieChart {
   background-color: transparent;
+  padding-left: 40px;
 }
 
 circle {
@@ -130,6 +127,10 @@ h2 {
 .btn-primary {
   background: transparent;
   border: none;
+}
+
+form {
+  padding-left: 40px;
 }
 
 /*  Center Column Style */
