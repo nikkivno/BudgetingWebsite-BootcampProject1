@@ -51,12 +51,40 @@ h2 {
   margin-bottom: 10px;
 }
 
-#navbar{
+#navbar{}
+
+
+h2{
   position: relative;
   font-size: larger;
   color: var(--accent-color);
-  -webkit-text-stroke: 3%;
+  -webkit-text-stroke: 0.03vw var(--primary-color);
+  text-transform: uppercase;
 }
+h2::before{
+  content: attr(data-text);
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  color: var(--content-secondary-color);
+  -webkit-text-stroke: 0vw var(--primary-color);
+  border-right: 2px solid var(--accent-color);
+  overflow: hidden;
+  animation: animate 4s linear infinite;
+}
+@keyframes animate{
+  0%
+  {
+    width: 0;
+  }
+  70%
+  {
+    width: 100%;
+  }
+}
+
 
 
 /*  Left Column Style  */
