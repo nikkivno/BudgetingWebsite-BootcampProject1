@@ -13,7 +13,7 @@ svg.append("circle")
   .attr("fill", "#808080")
   .attr("stroke", "black")
   .style("stroke-width", "2px")
-  .style('opacity', 50),
+  .style("opacity", 0.7),
 
 //   Expense Input Form 
 
@@ -82,9 +82,9 @@ document.getElementById('culminate').addEventListener('click', function(){
       .append('path')
       .attr('d', arc)
       .attr('fill', (d, i) => customColors(i))
-      .attr("stroke", "black")
-      .style("stroke-width", "1px")
-      // .style("opacity", 0.7);
+      // .attr("stroke", "black")
+      // .style("stroke-width", "1px")
+
 
     pieChart
     .selectAll('mySlices')
