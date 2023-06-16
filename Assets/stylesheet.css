@@ -159,4 +159,13 @@ form {
   color: var(--content-secondary-color);
 }
 
+.todo {
+  padding-right: 40px;
+}
+
+.notes {
+  padding-right: 40px;
+}
+
+
 /*  Footer Style */
