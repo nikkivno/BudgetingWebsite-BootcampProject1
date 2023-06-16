@@ -155,7 +155,7 @@ h2 {
 }
 
 .authorize {
-  color: grey;
+  color: var(--content-secondary-color);
 }
 
 /*  Footer Style */
