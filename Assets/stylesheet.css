@@ -94,6 +94,7 @@ h2::before{
 
 #pieChart {
   background-color: transparent;
+  padding-left: 40px;
 }
 
 circle {
@@ -128,6 +129,10 @@ h2 {
   border: none;
 }
 
+form {
+  padding-left: 40px;
+}
+
 /*  Center Column Style */
 
 
@@ -153,5 +158,14 @@ h2 {
 .authorize {
   color: var(--content-secondary-color);
 }
+
+.todo {
+  padding-right: 40px;
+}
+
+.notes {
+  padding-right: 40px;
+}
+
 
 /*  Footer Style */
