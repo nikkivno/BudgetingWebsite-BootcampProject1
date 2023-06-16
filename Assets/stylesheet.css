@@ -109,6 +109,7 @@ svg {
 }
 .input-group {
   margin: 10px;
+  margin-bottom: 10px;
   width: 20%;
 }
 
@@ -122,10 +123,6 @@ h2 {
   margin-bottom: 10px;
 }
 
-.input-group {
-  margin-bottom: 10px;
-}
-
 .form-control {
   border-radius: 0;
 }
@@ -135,7 +132,7 @@ h2 {
   border: none;
 }
 
-/*  Ceneter Column Style */
+/*  Center Column Style */
 
 
 
@@ -157,5 +154,8 @@ h2 {
   resize: none;
 }
 
+.authorize {
+  color: grey;
+}
 
 /*  Footer Style */
