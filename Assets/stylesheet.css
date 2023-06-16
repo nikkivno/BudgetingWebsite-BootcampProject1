@@ -193,3 +193,60 @@ footer {
   border: 2px solid var(--accent-color);
   box-shadow: 0 0 30px var(--accent-color);
 }
+
+/* Media Queries */
+
+/* Media Query <= 576px */
+@media (max-width: 575.98px) {
+  /* Update styles for the navbar */
+  .navbar {
+    height: auto;
+  }
+
+  /* Update styles for the left column */
+  .col-4 {
+    width: 100%;
+  }
+
+  #pieChart {
+    margin: auto;
+  }
+
+  form {
+  margin: auto;
+  }
+
+  .col-4.calendar {
+    display: none;
+  } 
+}
+
+/* Media Query 577px - 991.98px */
+@media (min-width: 576px) and (max-width: 991.98px) {
+  /* Update styles for the left column */
+  .col-4 {
+    width: 50%;
+  }
+
+  .col-4.calendar {
+    width: 50%;
+  }
+}
+
+/* Media Query >= 992px */
+@media (min-width: 992px) {
+  /* Update styles for the left column */
+  .col-4 {
+    width: 33.33%;
+  }
+
+  /* Update styles for the center column */
+  .calendar {
+    width: 100%;
+  }
+
+  /* Update styles for the right column */
+  .col-4.calendar {
+    width: 33.33%;
+  }
+}
