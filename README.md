@@ -1,4 +1,4 @@
-# BudgetingWebsite-BootcampProject1
+# BudgetSense
 
 ## Description
 
@@ -7,20 +7,17 @@ We have chosen to code:
 
 Our project will centre around a budgeting calendar with the user being able to input reoccurring and singular expenses that will display on a monthly calendar spread, accompanied by a pie chart that can open up to a modal display that shows spent income and on what and remaining funds for the month.
 
-Potential APIs to use:
+APIs Used:
 - Google Calendar API (https://console.cloud.google.com/apis/library/calendar-json.googleapis.com?authuser=2&project=encoded-source-389221)
-- 
-- 
-- 
+- D3api Pie Chart API ( https://d3-graph-gallery.com/index.html ) 
 
 
 What We learned during the project.
 - How to Read API documentation.
-- 
-- 
-- 
-- 
-- 
+- How to work on a team.
+- How to use branches.
+- How to work with team members coding variations. 
+- How to add css animation.  
 
 We followed the criteria below provided by the class instructors.
 
@@ -53,14 +50,16 @@ We followed the criteria below provided by the class instructors.
 
 The following image shows the web application.
 
-![BudgetingWebsite](./ link image)
+![BudgetSense](./Assets/Images/screenshot.png)
 
-> **Note**: ........................
+> **Note**: Default Theme Currently Displayed ( Sesonal Themes In Drop Down Menu.)
 
 
 
 ## Credits
 The following is what we all contributed to the project.
+It was a joy to work with my team.
+Thank You , For all your hard work and dedication to our first project.
 
 ### Nikki - nikkivno
 - README
@@ -91,8 +90,11 @@ The following is what we all contributed to the project.
 ## Our Githubs
 
 - Nikki - https://github.com/nikkivno
-- Coral - https://xnoirnightx.github.io
+- Coral - https://github.com/xNoirNightx
 - Riley - https://github.com/Riley19James
+
+## Slideshow
+https://docs.google.com/presentation/d/1Q98n1lEFSPtDmHimeYFuH0_mb2wHd5Jehta66lpREYY/edit#slide=id.g29f43f0a72_0_10
 
 ## License
 
