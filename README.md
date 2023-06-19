@@ -50,7 +50,7 @@ We followed the criteria below provided by the class instructors.
 
 The following image shows the web application.
 
-![BudgetSense](./Assets/Images/screenshot.png)
+![BudgetSense](./Assets/Images/screenshot1.png)
 
 > **Note**: Default Theme Currently Displayed ( Sesonal Themes In Drop Down Menu.)
 
