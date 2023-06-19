@@ -81,14 +81,14 @@ h2::before{
   -webkit-text-stroke: 0vw var(--primary-color);
   border-right: 2px solid var(--accent-color);
   overflow: hidden;
-  animation: animate 4s linear infinite;
+  animation: animate 6s linear infinite;
 }
 @keyframes animate{
   0%
   {
     width: 0;
   }
-  70%
+  80%
   {
     width: 100%;
   }
